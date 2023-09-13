@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 dotenv.config(); // Load environment variables from .env file
 import { ethers } from "ethers";
 const hre = require("hardhat");
-const StablecoinTransactionjson = require("./../artifacts/contracts/retail-cbdc.sol/StablecoinTransaction.json");
+const StablecoinTransactionjson = require("./../artifacts/contracts/general-transaction-stablecoin.sol/StablecoinTransaction.json");
 
 const contractAddress: string = process.env.CONTRACT_ADDRESS || "";
 const contractABI: any[] = StablecoinTransactionjson.abi;
